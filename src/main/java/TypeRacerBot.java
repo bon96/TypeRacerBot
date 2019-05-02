@@ -82,6 +82,4 @@ public class TypeRacerBot {
 
         new TypeRacerBot(args[1], Integer.parseInt(args[0]));
     }
-
-
 }
