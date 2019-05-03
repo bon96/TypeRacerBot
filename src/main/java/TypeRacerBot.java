@@ -42,12 +42,9 @@ public class TypeRacerBot {
                     String text = textElement != null ? textElement.getText() : null;
 
                     if (text != null) {
-                        for (String string : text.split("\\s+")) {
-                            for (char c : string.toCharArray()) {
-                                input.sendKeys(String.valueOf(c));
-                                Thread.sleep((int) ThreadLocalRandom.current().nextDouble(typeSpeed, typeSpeed+20));
-                            }
-                            input.sendKeys(" ");
+                        for (char c : text.toCharArray()) {
+                            input.sendKeys(String.valueOf(c));
+                            Thread.sleep((int) ThreadLocalRandom.current().nextDouble(typeSpeed, typeSpeed+20));
                         }
                     }
                 }
