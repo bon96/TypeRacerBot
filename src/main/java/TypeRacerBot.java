@@ -8,9 +8,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class TypeRacerBot {
 
-    private static final String ACCEPT_COOKIES_XPATH = "/html/body/div[1]/div/div/div[2]/button[2]";
+    private static final String ACCEPT_COOKIES_XPATH = "/html/body/div[1]/div/div/div/div[2]/div/button[3]";
     private static final String JOIN_RACE_XPATH = "//*[@id=\"gwt-uid-17\"]/table/tbody/tr[3]/td/table/tbody/tr/td[2]";
-    private static final String TEXT_TO_TYPE_XPATH = "/html/body/div[1]/div/div[1]/div[1]/table/tbody/tr[2]/td[2]/div/div[1]/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[3]/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div";
+    //private static final String TEXT_TO_TYPE_XPATH = "/html/body/div[1]/div/div[1]/div[1]/table/tbody/tr[2]/td[2]/div/div[1]/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[3]/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div";
+    private static final String TEXT_TO_TYPE_XPATH = "    /html/body/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td[2]/div/div[1]/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[3]/table/tbody/tr[2]/td/table/tbody/tr[1]/td/table/tbody/tr[1]/td/div/div";
     private static final String BEGIN_TEST_XPATH = "/html/body/div[9]/div/div/div[2]/div/div/table/tbody/tr[4]/td/button";
 
     private final WebDriver webDriver = new FirefoxDriver();
